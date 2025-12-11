@@ -26,7 +26,6 @@ export class AppController {
     console.log(`Log: Category=${category}, MimeType=${file.mimetype}`);
 
     this.validateCategoryLogic(file.mimetype, category);
-    // ------------------------------
 
     try {
       const convertedFilePath = await this.appService.processFile(file, targetFormat);
