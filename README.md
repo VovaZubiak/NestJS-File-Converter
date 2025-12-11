@@ -48,9 +48,12 @@ cd converter-backend
 npm install
 
 pip install Pillow python-docx fpdf PyPDF2
-
-## Project setup
-
+```
+1. Download the [FFmpeg Essentials build](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-essentials.7z) (Windows)
+2. **Extract the archive and locate the `bin` folder.**
+3. Copy the **`ffmpeg.exe`** file.
+4. Paste it into the **project root directory** (converter-backend)
+```bash
 $ npm install
 npm run start:dev
 ```
