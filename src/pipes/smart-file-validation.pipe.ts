@@ -14,7 +14,6 @@ export class SmartFileValidationPipe implements PipeTransform {
     if (!file) {
       throw new BadRequestException('Файл не завантажено');
     }
-
     if (file.size > MAX_FILE_SIZE) {
       throw new BadRequestException(`Файл занадто великий. Максимум: ${MAX_FILE_SIZE / 1024 / 1024}MB`);
     }

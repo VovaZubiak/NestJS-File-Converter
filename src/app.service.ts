@@ -16,6 +16,7 @@ export class AppService {
 
   async processFile(file: Express.Multer.File, targetFormat: string): Promise<string> {
     const fileId = uuidv4();
+    
     //Clearing the file name from Cyrillic and spaces 
     const safeName = fileId + path.extname(file.originalname);
     const inputPath = path.join(this.uploadDir, safeName);

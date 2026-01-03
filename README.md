@@ -43,6 +43,7 @@
 **1. Клонування та залежності**
 ```bash
 git clone [https://github.com/VovaZubiak/NestJS-File-Converter.git](https://github.com/VovaZubiak/NestJS-File-Converter.git)
+
 cd converter-backend
 
 npm install
